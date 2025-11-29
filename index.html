@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+     
+    <head>
+        <meta charset="utf-8">
+        <meta name="amandeep" content="portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <title>World Trivia by Amandeep </title>
+       
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="assets/images/icons8-favicon.gif">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+
+  
+    <div id="loader">
+        <div class="spinner"><img src="assets/images/earth.gif" alt="World Logo" style="width: 35px; height: 35px; vertical-align: middle;">
+        </div>
+        <h2 style="margin-top:20px; color:white; border:none;">Loading World Trivia...</h2>
+    </div>
+
+ 
+    <header>
+        <div class="logo">
+            <img src="assets/images/earth.gif" alt="World Logo" style="width: 35px; height: 35px; vertical-align: middle;">
+            World Trivia
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <div id="ticker-bar">
+        <div class="ticker-content">
+            Fact: Canada has the longest coastline in the world &nbsp;✦&nbsp; 
+            Fact: The Golden Temple feeds 100,000 people daily &nbsp;✦&nbsp; 
+            Fact: The Eiffel Tower grows in summer due to heat &nbsp;✦&nbsp; 
+            Fact: Japan has over 6,800 islands &nbsp;✦&nbsp; 
+            Fact: The Statue of Liberty was a gift from France
+        </div>
+    </div>
+
+    <main>
+  
+        <section id="home">
+            
+            <h1>Test Your Knowledge of the World!</h1>
+            <p>Welcome to World Trivia. Dive into thousands of facts, from the Canadian Rockies to the streets of Mumbai. Learn something new every day.</p>
+            <a href="#trivia" class="cta-button">Start Exploring</a>
+        </section>
+
+        
+        <section id="trivia">
+            <h2>Did You Know?</h2>
+            
+            
+            <div class="slider-wrapper">
+                
+                <!-- 
+                 Reference: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_scrollby
+                -->
+                <button class="slider-btn prev" aria-label="Previous Slide" 
+                    onclick="document.getElementById('trivia-slider').scrollBy({left: -400, behavior: 'smooth'})">
+                    ❮
+                </button>
+
+                
+                <div class="trivia-container" id="trivia-slider" tabindex="0">
+                    
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="assets/images/golden_temple.jpg" alt="The Golden Temple">
+                        <div class="card-content">
+                            <h3>The Golden Temple</h3>
+                            <p>A breathtaking spiritual Sikh temple open to all faiths, famous for its shimmering gold façade and its Langar, which serves free meals to tens of thousands of visitors every single day</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="assets/images/taj-mahal.jpg" alt="The Taj Mahal">
+                        <div class="card-content">
+                            <h3>The Taj Mahal</h3>
+                            <p>Agra, India: An immense mausoleum of white marble, built between 1631 and 1648 by order of the Mughal emperor.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="assets/images/himalayas.jpg" alt="The Himalayas">
+                        <div class="card-content">
+                            <h3>The Himalayas</h3>
+                            <p>The "Abode of Snow" contains the planet's highest peaks, including Mount Everest at 8,849 meters.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=600&auto=format&fit=crop" alt="Canadian Rockies">
+                        <div class="card-content">
+                            <h3>Canadian Rockies</h3>
+                            <p>Banff, Canada: The Rockies are famous for jagged, ice-capped peaks and turquoise lakes like Lake Louise.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?q=80&w=600&auto=format&fit=crop" alt="Statue of Liberty">
+                        <div class="card-content">
+                            <h3>Statue of Liberty</h3>
+                            <p>New York, USA: A universal symbol of freedom and democracy, dedicated on October 28, 1886.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=600&auto=format&fit=crop" alt="The Colosseum">
+                        <div class="card-content">
+                            <h3>The Colosseum</h3>
+                            <p>Rome, Italy: The largest amphitheater ever built, holding up to 80,000 spectators in ancient times.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=600&auto=format&fit=crop" alt="Great Wall of China">
+                        <div class="card-content">
+                            <h3>Great Wall of China</h3>
+                            <p>China: A series of fortifications that were built across the historical northern borders of ancient Chinese states.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=600&auto=format&fit=crop" alt="Machu Picchu">
+                        <div class="card-content">
+                            <h3>Machu Picchu</h3>
+                            <p>Peru: A 15th-century Inca citadel, located in the Eastern Cordillera of southern Peru, on a 2,430-meter mountain ridge.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="https://images.unsplash.com/photo-1523059623039-a9ed027e7fad?q=80&w=600&auto=format&fit=crop" alt="Sydney Opera House">
+                        <div class="card-content">
+                            <h3>Sydney Opera House</h3>
+                            <p>Australia: A multi-venue performing arts centre at Sydney Harbour, famous for its unique shell-like design.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="trivia-card">
+                        
+                        <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=600&auto=format&fit=crop" alt="Pyramids of Giza">
+                        <div class="card-content">
+                            <h3>Pyramids of Giza</h3>
+                            <p>Egypt: The oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- 
+                 Reference : https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_scrollby
+                -->
+                <button class="slider-btn next" aria-label="Next Slide"
+                    onclick="document.getElementById('trivia-slider').scrollBy({left: 400, behavior: 'smooth'})">
+                    ❯
+                </button>
+
+            </div>
+        </section>
+
+      
+        <section id="categories">
+            <h2>Explore Categories</h2>
+            <ul class="category-list">
+                <li class="category-item">History</li>
+                <li class="category-item">Geography</li>
+                <li class="category-item">Science</li>
+                <li class="category-item">Art & Culture</li>
+                <li class="category-item">Sports</li>
+                <li class="category-item">Nature</li>
+            </ul>
+        </section>
+
+        
+        <section id="scores">
+            <h2>Top Trivia Masters</h2>
+            <div class="table-container">
+                <table>
+                    <caption>Hall of Fame - Weekly Leaders</caption>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>Category</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Aman K.</td>
+                            <td>Canada</td>
+                            <td>Geography</td>
+                            <td>9,850</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Kamal H.</td>
+                            <td>Canada</td>
+                            <td>History</td>
+                            <td>9,720</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Jassa S.</td>
+                            <td>Canada</td>
+                            <td>Science</td>
+                            <td>9,500</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Pinder S.</td>
+                            <td>USA</td>
+                            <td>Art</td>
+                            <td>9,100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <h2>Stay Smart!</h2>
+            <p>Get the "Puzzle of the Day" delivered straight to your inbox.</p>
+            <br>
+            <a href="#" class="cta-button">Subscribe Now</a>
+        </section>
+
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have a question or a trivia fact to submit? Reach out to us!</p>
+                    <br>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <span>+1 (000) 123-4567</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📧</span>
+                        <span>hello@worldtrivia.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <span>000 Halifax, NS, B0B 1A1</span>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+        <p>&copy; 2025 World Trivia by Amandeep. All rights reserved.</p>
+        <p>
+            <a href="#" style="color: #aaa; margin: 0 10px;">Privacy Policy</a> | 
+            <a href="#" style="color: #aaa; margin: 0 10px;">Accessibility Statement</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
